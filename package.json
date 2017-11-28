@@ -1,0 +1,50 @@
+{
+  "name": "nodejs-airbnb-skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton for any new node.js project with eslint airbnb rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover --dir ./coverage _mocha ./tests",
+    "eslint-staged": "eslint",
+    "lint-staged": "lint-staged"
+  },
+  "pre-commit": [
+    "lint-staged",
+    "test"
+  ],
+  "lint-staged": {
+    "*.js": "eslint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkopa/nodejs-airbnb-skeleton.git"
+  },
+  "keywords": [
+    "node.js",
+    "airbnb",
+    "mocha",
+    "istanbul",
+    "skeleton"
+  ],
+  "author": "Marcin Kopa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkopa/nodejs-airbnb-skeleton/issues"
+  },
+  "homepage": "https://github.com/mkopa/nodejs-airbnb-skeleton#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.5",
+    "lint-staged": "^5.0.0",
+    "mocha": "^4.0.1",
+    "pre-commit": "^1.2.2"
+  }
+}

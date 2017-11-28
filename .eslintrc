@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "./node_modules/eslint-config-airbnb/index.js"
+  ],
+  "rules": {
+    "strict": [0, "global"],
+    "no-underscore-dangle": 0
+  }
+}
